@@ -80,5 +80,6 @@ https://github.com/sebastianhamza/sebastianhamza.github.io/actions
 `.github/workflows/deploy.yml` builds with Hugo extended 0.167.0 + Dart Sass and
 publishes `public/` to GitHub Pages. Any push to `main` triggers it.
 
-One-time repo setting: **Settings → Pages → Build and deployment → Source =
-"GitHub Actions"**.
+One-time repo setting: the workflow enables GitHub Pages by itself
+(`configure-pages` with `enablement: true`). If the first run still fails,
+set **Settings → Pages → Build and deployment → Source = "GitHub Actions"**.
