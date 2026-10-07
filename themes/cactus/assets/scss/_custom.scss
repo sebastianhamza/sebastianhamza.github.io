@@ -1,0 +1,15 @@
+// Custom color palette — used when `colorscheme = "custom"` in hugo.toml.
+// `$dir` is 1 for dark palettes (derived shades lightened) or -1 for light
+// palettes (derived shades darkened).
+
+$background: #1c1a17;
+$text: #ffffff;
+$link: #e57915;
+$accent-1: #f0b433;
+$accent-2: #eeeeee;
+$accent-3: #cccccc;
+$quote: #ccffb6;
+$meta: #808080;
+$border: #908d8d;
+$scrollbar: #999999;
+$dir: 1;

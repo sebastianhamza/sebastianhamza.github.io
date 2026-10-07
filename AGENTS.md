@@ -21,5 +21,7 @@ with `TOCSS-DART` errors.
   in `content/`.
 - The theme is vendored at `themes/cactus/` — edits there are committed like any
   other file.
+- The custom palette (used when `colorscheme = "custom"`) lives in
+  `themes/cactus/assets/scss/_custom.scss`.
 - CI in `.github/workflows/deploy.yml` pins Hugo 0.167.0 (extended) + Sass and
   deploys on push to `main`; keep the local Hugo version in sync when possible.

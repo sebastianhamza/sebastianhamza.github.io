@@ -66,7 +66,8 @@ https://github.com/sebastianhamza/sebastianhamza.github.io/actions
 ## Customizing
 
 - **Name, bio, colors, menu, social links:** `hugo.toml` (`[params]` section).
-  `colorscheme` accepts `dark`, `light`, `classic`, `white`.
+  `colorscheme` accepts `dark`, `light`, `classic`, `white`, `custom` — the
+  custom palette is defined in `themes/cactus/assets/scss/_custom.scss`.
 - **Logo / favicons:** replace the files in `static/images/` (create the folder;
   it overrides the theme's defaults).
 - **Projects on the home page:** `data/projects.yml`.

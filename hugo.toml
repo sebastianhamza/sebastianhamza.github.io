@@ -57,7 +57,7 @@ enableEmoji = true
   projectsUrl = "https://github.com/sebastianhamza"
 
   # Look & feel
-  colorscheme = "dark"             # dark | light | classic | white
+  colorscheme = "custom"           # dark | light | classic | white | custom
   pageWidth = 48                   # rem
 
   rss = true
