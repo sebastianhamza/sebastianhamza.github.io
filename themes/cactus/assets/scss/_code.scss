@@ -34,6 +34,8 @@ code {
 .highlight {
   position: relative; // anchors the absolutely-positioned .btn-copy
   overflow-x: auto;
+  overflow-y: hidden; // x/y can't be mixed with visible; keep stray boxes from
+                      // forcing a vertical scrollbar
   margin: 1rem 0;
   padding: 10px 15px;
   border-radius: 4px;
@@ -79,6 +81,7 @@ code {
   .btn-copy {
     font-size: 1.2rem;
     position: absolute;
+    top: 10px;
     right: 20px;
     opacity: 0;
     transition: opacity 0.2s ease-in;
