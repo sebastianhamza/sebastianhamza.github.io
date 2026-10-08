@@ -15,13 +15,31 @@ article {
     }
 
     .meta {
-      margin-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      column-gap: .6rem;
+      row-gap: .25rem;
+      margin-top: .4rem;
       margin-bottom: 1rem;
+    }
+
+    // Separator between meta items: author | date | category | tag.
+    .meta > * + *::before {
+      margin-right: .6rem;
+      content: "|";
     }
 
     .meta * {
       color: $color-accent-3;
       font-size: .85rem;
+    }
+
+    .article-category,
+    .article-tag {
+      i {
+        margin-right: .35rem;
+      }
     }
 
     .author {
@@ -164,14 +182,10 @@ article {
   }
 }
 
-@media (min-width: 480px) {
-  .article-tag,
-  .article-category {
-    display: inline;
-
-    &:before {
-      content: "|";
-    }
+@media (max-width: 480px) {
+  // Let items wrap cleanly without a leading "|".
+  article header .meta > * + *::before {
+    content: none;
   }
 }
 
